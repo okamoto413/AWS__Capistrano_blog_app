@@ -1,0 +1,18 @@
+current directory: /home/kujira12/workspace/dpro/blog_app/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+/home/kujira12/.rbenv/versions/3.3.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/kujira12/workspace/dpro/blog_app/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240801-724569-hp7fa2 sitelibdir\=./.gem.20240801-724569-hp7fa2 clean
+
+current directory: /home/kujira12/workspace/dpro/blog_app/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240801-724569-hp7fa2 sitelibdir\=./.gem.20240801-724569-hp7fa2
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/kujira12/workspace/dpro/blog_app/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240801-724569-hp7fa2 sitelibdir\=./.gem.20240801-724569-hp7fa2 install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20240801-724569-hp7fa2/racc
+
+current directory: /home/kujira12/workspace/dpro/blog_app/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240801-724569-hp7fa2 sitelibdir\=./.gem.20240801-724569-hp7fa2 clean
