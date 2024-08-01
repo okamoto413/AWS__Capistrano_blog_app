@@ -2,7 +2,7 @@
 lock "~> 3.19.1"
 
 set :application, "blog_app"
-set :repo_url, "https://github.com/kei-kamiguchi/blog_app.git"
+set :repo_url, "https://github.com/okamoto413/AWS__Capistrano_blog_app.git"
 set :bundle_without, %w{test}.join(':')
 
 set :rbenv_version, '3.3.0'   # 追記
