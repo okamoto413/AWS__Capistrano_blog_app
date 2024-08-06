@@ -1,0 +1,53 @@
+current directory: /home/kujira12/workspace/dpro/blog_app/vendor/bundle/ruby/3.3.0/gems/unicorn-6.1.0/ext/unicorn_http
+/home/kujira12/.rbenv/versions/3.3.0/bin/ruby extconf.rb
+checking for rb_hash_clear() in ruby.h... yes
+checking if String#-@ (str_uminus) dedupes... yes
+checking if Hash#[]= (rb_hash_aset) dedupes... yes
+checking for epoll_create1() in sys/epoll.h... yes
+creating Makefile
+
+current directory: /home/kujira12/workspace/dpro/blog_app/vendor/bundle/ruby/3.3.0/gems/unicorn-6.1.0/ext/unicorn_http
+make DESTDIR\= sitearchdir\=./.gem.20240806-1461668-9tt5f5 sitelibdir\=./.gem.20240806-1461668-9tt5f5 clean
+
+current directory: /home/kujira12/workspace/dpro/blog_app/vendor/bundle/ruby/3.3.0/gems/unicorn-6.1.0/ext/unicorn_http
+make DESTDIR\= sitearchdir\=./.gem.20240806-1461668-9tt5f5 sitelibdir\=./.gem.20240806-1461668-9tt5f5
+compiling httpdate.c
+compiling unicorn_http.c
+In file included from unicorn_http.rl:15:
+epollexclusive.h: In function ‘prep_readers’:
+epollexclusive.h:58:3: warning: ‘fd’ is deprecated: rb_io_descriptor [-Wdeprecated-declarations]
+   58 |   rc = epoll_ctl(epfd, EPOLL_CTL_ADD, fptr->fd, &e);
+      |   ^~
+In file included from epollexclusive.h:14,
+                 from unicorn_http.rl:15:
+/home/kujira12/.rbenv/versions/3.3.0/include/ruby-3.3.0/ruby/io.h:154:9: note: declared here
+  154 |     int fd;
+      |         ^~
+In file included from unicorn_http.rl:15:
+epollexclusive.h: In function ‘do_wait’:
+epollexclusive.h:77:2: warning: ‘fd’ is deprecated: rb_io_descriptor [-Wdeprecated-declarations]
+   77 |  return (void *)(long)epoll_wait(epw->fptr->fd, epw->events,
+      |  ^~~~~~
+In file included from epollexclusive.h:14,
+                 from unicorn_http.rl:15:
+/home/kujira12/.rbenv/versions/3.3.0/include/ruby-3.3.0/ruby/io.h:154:9: note: declared here
+  154 |     int fd;
+      |         ^~
+At top level:
+unicorn_http.c:329:18: warning: ‘http_parser_en_main’ defined but not used [-Wunused-const-variable=]
+  329 | static const int http_parser_en_main = 1;
+      |                  ^~~~~~~~~~~~~~~~~~~
+unicorn_http.c:327:18: warning: ‘http_parser_en_ChunkedBody_chunk_chunk_end’ defined but not used [-Wunused-const-variable=]
+  327 | static const int http_parser_en_ChunkedBody_chunk_chunk_end = 105;
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: warning: unrecognized command line option ‘-Wno-self-assign’
+cc1: warning: unrecognized command line option ‘-Wno-parentheses-equality’
+cc1: warning: unrecognized command line option ‘-Wno-constant-logical-operand’
+linking shared-object unicorn_http.so
+
+current directory: /home/kujira12/workspace/dpro/blog_app/vendor/bundle/ruby/3.3.0/gems/unicorn-6.1.0/ext/unicorn_http
+make DESTDIR\= sitearchdir\=./.gem.20240806-1461668-9tt5f5 sitelibdir\=./.gem.20240806-1461668-9tt5f5 install
+/usr/bin/install -c -m 0755 unicorn_http.so ./.gem.20240806-1461668-9tt5f5
+
+current directory: /home/kujira12/workspace/dpro/blog_app/vendor/bundle/ruby/3.3.0/gems/unicorn-6.1.0/ext/unicorn_http
+make DESTDIR\= sitearchdir\=./.gem.20240806-1461668-9tt5f5 sitelibdir\=./.gem.20240806-1461668-9tt5f5 clean
