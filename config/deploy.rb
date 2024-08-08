@@ -6,7 +6,7 @@ set :repo_url, "https://github.com/okamoto413/AWS__Capistrano_blog_app.git"
 set :bundle_without, %w{test}.join(':')
 
 set :rbenv_version, '3.3.0'   # 追記
-set :linked_files, %w{config/secrets.yml}   # 4
+set :linked_files, %w{config/secrets.yml .env}   # 4
 
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}   # 5
  set :keep_releases, 5   # 6
